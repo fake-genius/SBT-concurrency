@@ -1,10 +1,7 @@
 package ru.sbt.edu.concurrency.locks;
 
 import org.junit.jupiter.api.Test;
-import ru.sbt.edu.concurrency.counter.Counter;
-import ru.sbt.edu.concurrency.counter.ILockCounter;
-import ru.sbt.edu.concurrency.counter.MutexCounter;
-import ru.sbt.edu.concurrency.counter.SeqCounter;
+import ru.sbt.edu.concurrency.counter.*;
 import ru.sbt.edu.concurrency.locks.theory.LockOne;
 import ru.sbt.edu.concurrency.locks.theory.LockTwo;
 import ru.sbt.edu.concurrency.locks.theory.LockZero;
@@ -39,6 +36,12 @@ public class ILockTest {
     public void testMutexCounter() {
         Counter counter = new MutexCounter();
         testCounter(counter, 100000);
+    }
+
+    @Test
+    public void testLockCounter() {
+        Counter counter = new LockCounter();
+        testCounter(counter, 10000);
     }
 
     @Test
