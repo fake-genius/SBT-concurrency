@@ -45,6 +45,12 @@ public class ILockTest {
     }
 
     @Test
+    public void testConcurrentCounter() {
+        Counter counter = new ConcurrentCounter();
+        testCounter(counter, 1000);
+    }
+
+    @Test
     public void testNaiveCounter()  {
         Counter counter = new SeqCounter();
         int iters = 1000;

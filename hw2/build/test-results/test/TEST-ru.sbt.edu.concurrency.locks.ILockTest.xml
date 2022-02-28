@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.sbt.edu.concurrency.locks.ILockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-28T19:38:16" hostname="LILIA-W10" time="0.049">
+<testsuite name="ru.sbt.edu.concurrency.locks.ILockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-28T19:50:04" hostname="LILIA-W10" time="0.054">
   <properties/>
-  <testcase name="testLockCounter()" classname="ru.sbt.edu.concurrency.locks.ILockTest" time="0.049"/>
+  <testcase name="testConcurrentCounter()" classname="ru.sbt.edu.concurrency.locks.ILockTest" time="0.054"/>
   <system-out><![CDATA[1
 0
-expected: 20000
-actual:   20000
+expected: 2000
+actual:   2000
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
