@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.sbt.edu.concurrency.locks.ILockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-28T19:27:33" hostname="LILIA-W10" time="0.093">
+  <properties/>
+  <testcase name="testMutexCounter()" classname="ru.sbt.edu.concurrency.locks.ILockTest" time="0.093"/>
+  <system-out><![CDATA[0
+1
+expected: 200000
+actual:   200000
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
